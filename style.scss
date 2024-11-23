@@ -2,4 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @font-face {
+        font-family: 'KiteOne-Regular';
+        src:
+            url('./fonts/KiteOne-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Inika-Bold';
+        src:
+            url('./fonts/Inika-Bold.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Inika-Regular.';
+        src:
+            url('./fonts/Inika-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        background-color: #D9D9D9;
+    
+        img {
+            max-width: 50vw;
+        }
+        
+        nav {
+            width: 50vw;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1em;
+                list-style: none;
+                
+                li {
+                    font-size: 2em;
+                    font-weight: 400;
+                    font-family: 'KiteOne-Regular', sans-serif;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 80vh;
+
+        article {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            text-align: center;
+            
+            h1, h2 {
+                font-family: 'Inika-Bold', sans-serif;
+            }
+
+            .p1 {
+                font-family: 'Inika-Regular', sans-serif;
+                width: 454px;
+            }
+            
+            img {
+                width: 400px;
+            }
+
+            .p2 {
+                font-family: 'Inika-Regular', sans-serif;
+                width: 320px;
+                font-size: 1em;
+            }
+
+            button {
+                background-color: #D9D9D9;
+                padding: 0.5em 6em;
+                width: 10em;
+                display: flex;
+                justify-content: center;
+                border-radius: 25px;
+                border: 0;
+
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-family: 'Inika-Bold', sans-serif;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    
 }
